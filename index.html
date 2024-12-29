@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Chess</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    <script src="src/main.js" defer></script>
+</head>
+<body>
+<div id="app">
+    <h1>Gesture Chess</h1>
+    <div id="game-container">
+        <canvas id="chessboard" width="400" height="400"></canvas>
+        <div class="camera-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="handCanvas"></canvas>
+        </div>
+    </div>
+    <div id="button-container"></div>
+</div>
+</body>
+</html>
